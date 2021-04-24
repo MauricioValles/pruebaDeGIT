@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Precargar CCSboostrap locales-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <!--- font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Elementos Boostrap</title>
+</head>
+
+<body >
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.html" target="_parent">
+        <img src="assets/img/jamaco.png" alt="logo" width="80px" height="80px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="carrusel.html">Elementos</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="tables.html">Tablas</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <!-- fin navbar-->
+
+    <!-- Carrosel section-->
+    <div class="container mb-4">
+        <div class="row">
+            <div id="Carrosel" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores-->
+                <ol class="carousel-indicators">
+                  <li data-target="#Carrosel" data-slide-to="0" class="active"></li>
+                  <li data-target="#Carrosel" data-slide-to="1"></li>
+                  <li data-target="#Carrosel" data-slide-to="2"></li>
+                  <li data-target="#Carrosel" data-slide-to="3"></li>
+                  <li data-target="#Carrosel" data-slide-to="4"></li>
+                  <li data-target="#Carrosel" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Slidehow-->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/001-1200x500.jpg" class="img-fluid" alt="lago">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/002-1200x500.jpg" class="d-block w-100" alt="puente en el Bosque">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/003-1200x500.jpg" class="d-block w-100" alt="tronco de un arbol">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/004-1200x500.jpg" class="d-block w-100" alt="Mar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/005-1200x500.jpg" class="d-block w-100" alt="Camping">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/006-1200x500.jpg" class="d-block w-100" alt="paraiso">
+                  </div>
+                </div>
+                
+                <!--Controles-->
+                <a class="carousel-control-prev" href="#Carrosel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#Carrosel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  Fin Carrosel section-->
+
+    <!-- card-->
+    <section class="footer mt-4 py-3 " style="background-color: aquamarine; color: black;">
+        <div class="container">
+            <h3 class="display-4">Manejo de CARDS usando grilla de boostrap</h3>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-4 mb-2 mt-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header">
+                            <img class= "img-fluid" src="http://picsum.photos/500/500" alt="imagen">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title"> TIPO 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nam et totam rerum facilis ab commodi, blanditiis harum eaque pariatur.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-secondary">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 mt-2">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="http://picsum.photos/500/500" alt="imagen">
+                        <div class="card-body">
+                            <h4 class="card-title">TIPO 2</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique asperiores nisi necessitatibus omnis iure veniam adipisci dolore obcaecati at velit!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 mt-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h4 class="card-title">TIPO 3</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto quis enim culpa consequuntur. Quod dolor id accusantium sint in.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link">Ver Detalles</a>
+                        </div>
+                        <img class="card-img-botton" src="http://picsum.photos/500/500" alt="imagen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <hr> 
+    <div class="container">
+        <div class="row mt-4 mb-4">
+            <h3 class="display-4">Uso de OVERLAY sobre Card</h3>
+            <div class="col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/006-1200x500.jpg" alt="paraiso">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle ">El mismo Paraiso</h4>
+                        <h6 class="card-subtitle text muted text-black font-italic">Escrito por mauricio</h6>
+                        <br>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui perspiciatis magnam architecto, obcaecati laboriosam dolore repudiandae eum officia sequi?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- fin card-->
+
+    <!-- Footer section-->
+    <footer class="footer mt-4 py-3" style="background-color: #343a40;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 text-center mt-4">
+                    <img src="assets/img/jamaco.png" alt="logo" width="80px" height="80px">
+                </div>
+               <div class="col-sm-12 col-md-3 text-center mt-4">
+                    <h6 class="display-6"> Barra nav footer</h6>
+                    <nav class="nav flex-column">
+                        <a class="nav-link " href="index.html">Inicio</a>
+                        <a class="nav-link disabled" href="carrusel.html">Elementos</a>
+                        <a class="nav-link" href="tables.html">Table</a>
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </nav>   
+               </div>
+               <div class="col-sm-12 col-md-6 mt-4">
+                   <div class="card bg-dark text-white border-secondary">
+                       <div class="card-header">
+                        <h4 class="card-title">Suscribete a nuestro newsletter!</h4>
+                       </div>
+                       <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Ej.tucorreo@correo.com">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="card-footer text-center"> 
+                           <a class="card-link" href="">
+                               <span style="font-size: 2em;">
+                                    <i class="fab fa-facebook"></i>
+                               </span>
+                           </a>
+                           <a class="card-link" href="https://www.twitch.tv/chupanogaming">
+                               <span style="font-size: 2em;">
+                                    <i class="fab fa-twitch"></i>
+                               </span>
+                           </a>
+                           
+                       </div>
+                   </div>
+               </div>
+            </div>
+
+        </div>
+    </footer>    
+    <!-- FIN Footer section-->
+
+
+    <!-- Precargar JS Boostrap al final del documento-->
+    <!-- or de carga JSQuery,Popper, Boostrap.Js-->
+    <script src="assets/js/jquery-3.5.1.slim.min.js" ></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
